@@ -22,8 +22,6 @@ for Digito in listaDeDigitos:
     print(Digito) #Se imprimen los dígitos
 ```
 
-### Código funcionando
-
 ## Punto 2
 
 Desarrollar un programa que ingrese un número flotante n y separe su parte entera de la parte decimal, y luego entrege los digitos tanto de la parte entera como de la decimal.
@@ -54,12 +52,9 @@ for digito in str(parte_decimal)[2:]:
     print(digito)
 ```
 
-### Código funcionando
-
 ## Punto 3
 
 Desarrollar un programa que permita ingresar dos números enteros y determinar si se tratan de números espejos
-
 
 #### Solución
 
@@ -99,8 +94,6 @@ def espejo(k,x):
 espejo(numero1,numero2)
 ```
 
-### Código funcionando
-
 ## Punto 4
 
 Diseñar una función que permita calcular una aproximación de la función coseno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Taylor. nota: use math para traer la función coseno y mostrar la diferencia entre el valor real y la aproximación. Con cuántos valores de la serie, se tienen errores del 10%, 1%, 0.1% y 0.001%.
@@ -128,8 +121,7 @@ def punto4(x:float, n:int) -> float:
         elif round(aprox, 1) == round(real, 1):
             errorD = i
             break
-
-     
+            
     diff = real - aprox
     main = "real: " + str(real) + " aprox: " + str(aprox) + " diff: " + str(diff) + " error A: " + str(errorA) + " error B: " + str(errorB) + " error C: " + str(errorC) + " error C: " + str(errorD) 
     return main
@@ -139,8 +131,6 @@ if __name__ == "__main__":
     main = punto4(x, n)
     print(main)
 ```
-
-### Código funcionando
 
 ## Punto 5
 
@@ -177,9 +167,6 @@ print("El mínimo común múltiplo de", num1, "y", num2, "es:", mcm(num1, num2))
 
 ```
 
-### Código funcionando 1
-
-
 #### Solución 2
 
 ``` python
@@ -204,8 +191,6 @@ num2 = int(input("Ingrese el segundo número: "))
 print("El mínimo común múltiplo de", num1, "y", num2, "es:", mcm(num1, num2))
 
 ```
-
-### Código funcionando 2
 
 ## Punto 6
 
@@ -249,8 +234,6 @@ else:
 
 ```
 
-### Código funcionando
-
 ## Punto 7
 
 Desarrollar un programa que determine si en una lista se encuentra una cadena de caracteres con dos o más vocales. Si la cadena existe debe imprimirla y si no existe debe imprimir 'No existe'.
@@ -285,9 +268,6 @@ if __name__ == "__main__": #Se define la función principal
     print(main) #Se imprime lo necesario
 ```
 
-### Código funcionando
-
-
 ## Punto 8
 
 Desarrollar un programa que dadas dos listas determine que elementos tiene la primer lista que no tenga la segunda lista.
@@ -321,8 +301,6 @@ if __name__ == "__main__": #Se define la función principal
     main = listaFinal(lista1, lista2) #Se le indica al programa que deberá retornar la lista final
     print(main) #Se imprimen los elementos
 ```
-
-### Código funcionando
 
 ## Punto 9
 
@@ -382,7 +360,6 @@ print(f"El mayor número elevado al menor número es: {potencia}")
 print(f"La raíz cúbica del menor número es: {raiz_cubica}")
 ```
 
-### Código funcionando
 ## Punto 10
 
 Desarrollar un algoritmo que determine si una matriz es mágica. Se dice que una matriz cuadrada es mágica si la suma de cada una de sus filas, de cada una de sus columnas y de cada diagonal es igual.
@@ -433,5 +410,3 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
-### Código funcionando
